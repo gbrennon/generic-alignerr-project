@@ -40,4 +40,34 @@ npx ts-node src/index.ts
 ```
 
 ## Usage
-The API will be available at `http://localhost:3000`
+
+### List all tasks
+```bash
+curl http://localhost:3000/tasks
+```
+
+### Create a new task
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{
+  "title": "Buy groceries",
+  "description": "Milk, eggs, bread"
+}' http://localhost:3000/tasks
+```
+
+### Get a single task
+```bash
+curl http://localhost:3000/tasks/1
+```
+
+### Update a task
+```bash
+curl -X PUT -H "Content-Type: application/json" -d '{
+  "title": "Buy groceries",
+  "description": "Milk, eggs, bread",
+  "completed": true
+}' http://localhost:3000/tasks/1
+```
+
+### Delete a task
+```bash
+curl -X DELETE http://localhost:3000/tasks/1
