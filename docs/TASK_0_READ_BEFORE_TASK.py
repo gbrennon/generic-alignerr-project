@@ -5,7 +5,7 @@ This project contains `src`, `tests` and `docs` directories:
 - The `tests` directory contains all the test cases and testing scripts.
 - The `docs` directory contains documentation files related to the project.
 
-Before starting any task, please ensure you have read and understood the following guidelines:
+Guidelines:
 1. Before starting a task, review any existing documentation in the `docs` directory to understand the context and requirements.
 2. Read the docker-related files and keep only the files related to the programming language that is being used for the task.
 3. After completing a task document what was done in a new markdown file inside the `docs` directory.
