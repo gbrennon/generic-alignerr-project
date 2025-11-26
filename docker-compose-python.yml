@@ -2,16 +2,12 @@ services:
   python-app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.python
     container_name: python-app
-    command: bash -c "poetry run uvicorn src.main:app --reload --host 0.0.0.0 --port 8000"
-    volumes:
-      - .:/app
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/app
     ports:
       - "8000:8000"
-    environment:
-      PYTHONPATH: /app/src
-      DATABASE_URL: postgres://postgres:postgres@db:5432/app
     depends_on:
       - db
 
