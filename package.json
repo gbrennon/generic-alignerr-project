@@ -1,0 +1,41 @@
+{
+  "name": "generic-alignerr-project",
+  "version": "1.0.0",
+  "description": "This repository is intentionally minimal and will be expanded as the implementation evolves.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbrennon/generic-alignerr-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gbrennon/generic-alignerr-project/issues"
+  },
+  "homepage": "https://github.com/gbrennon/generic-alignerr-project#readme",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "@types/sqlite3": "^3.1.11",
+    "dotenv": "^17.2.3",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "12.4.6",
+    "drizzle-kit": "0.31.7",
+    "drizzle-orm": "0.44.7",
+    "express": "5.1.0",
+    "sqlite3": "5.1.7",
+    "tslib": "2.8.1"
+  }
+}
