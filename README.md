@@ -1,39 +1,43 @@
-# Generic Project Template
+# Task Manager API
 
-This repository is intentionally minimal and will be expanded as the implementation evolves.
+A simple task management API built with TypeScript, Express, and SQLite.
 
----
+## Tech Stack
+- **TypeScript** - Type-safe JavaScript
+- **Express** - Web framework for Node.js
+- **SQLite** - File-based SQL database
+- **Drizzle ORM** - TypeScript-first ORM
 
-## 1. Overview
+## Project Structure
+```
+src/              # Application source
+  index.ts        # Express server and API routes
+  schema.ts       # Database schema definitions
+tests/            # Unit and integration tests
+docs/             # Documentation
+  TASK_1_setup_task_manager.md # Setup guide
+  TASK_2_rest_api.md # REST API documentation
+```
 
-Placeholder
+## API Documentation
+See [docs/TASK_2_rest_api.md](docs/TASK_2_rest_api.md) for full endpoint reference.
 
----
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/task-manager-api.git
+cd task-manager-api
+```
 
-## 2. Tech Stack
+2. Install dependencies
+```bash
+npm install
+```
 
-Placeholder
+3. Start the server
+```bash
+npx ts-node src/index.ts
+```
 
----
-
-## 3. Project Structure
-
-The structure will follow clean, maintainable principles:
-
-- **`src/`** — application source code  
-- **`tests/`** — automated tests  
-- **`docs/`** — architecture notes, design decisions, API references  
-
----
-
-## 4. License
-
-MIT License
-
----
-
-## 5. Notes
-
-This repository serves for multiple language implementations.  
-Each branch represent a different submission.
-Each submission may diverge depending on the chosen technology.
+## Usage
+The API will be available at `http://localhost:3000`
